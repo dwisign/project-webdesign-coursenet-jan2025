@@ -1,6 +1,36 @@
 .bg-orange{
     background: orange;
 }
+.navMenu{
+    position: sticky;
+    top: 0;
+    background: white;
+    padding: 15px 0px 15px 0px;
+    z-index: 3;
+}
+.navMenuWrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .listMenu{
+        width: 40%;
+        display: flex;
+        justify-content: left;
+        gap: 30px;
+        .menuItem a{
+            font-size: 13px;
+            text-decoration: none;
+            color: dimgrey;
+        }
+    }
+    .logo{
+        width: 30%;
+    }
+    .buttonRegister{
+        width: 20%;
+        text-align: right;
+    }
+}
 
 .heroSection{
     width: 100%;
@@ -9,4 +39,35 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    position: relative;
+    .heroHeight{
+        height: 100vh;
+        z-index: 1;
+        position: relative;
+    }
+    .heroRight{
+        background: white;
+        padding: 50px;
+    }
+    .bgLayer{
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.483);
+        z-index: 0;
+    }
+}
+
+.sectionAdvantage{
+    padding: 80px 0px;
+
+    .advLeft{
+        padding-right: 50px;
+    }
+
+    .advRight img{
+        width: 100%;
+    }
 }
