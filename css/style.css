@@ -186,6 +186,10 @@ body{
     }
 }
 
+.cursorPointer{
+    cursor: pointer;
+}
+
 
 
 /*CSS Media Queries MOBILE*/

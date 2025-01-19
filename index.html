@@ -65,10 +65,10 @@
                 <div class="heroLeft">
                     <h1 class="text-warning poppins-thin">Temukan Rumah Impian Anda di Aurelia Residence 2</h1>
                     <p class="text-white">
-                        Aurelia Residence 2 menawarkan rumah dengan konsep mezanine yang modern dan nyaman. Nikmati cicilan terjangkau mulai harga mulai <span class="poppins-extrabold text-warning">500 jutaan</span> dari 3 juta per bulan di lokasi yang strategis.
+                        Aurelia Residence 2 menawarkan rumah dengan konsep mezanine yang modern dan nyaman. Nikmati cicilan terjangkau mulai harga mulai <span class="poppins-extrabold text-warning">500 jutaan</span> dari 3 juta per bulan di lokasi yang strategis. <span id="textReadMore">Rumah mezanine kami menawarkan ruang yang lebih luas dengan desain yang elegan. Nikmati kenyamanan dan kepraktisan dalam setiap sudut rumah Anda.  <span id="hideText" class="text-info cursorPointer">&laquo; Hide</span></span>
                     </p>
                     <div class="btnHero">
-                        <button type="button" class="btn btn-success">Pelajari</button>
+                        <button type="button" class="btn btn-success" id="showText">Read More</button>
                         <button data-bs-toggle="modal" data-bs-target="#videoPopup" type="button" class="btn btn-outline-light"><i class="bi bi-play-circle"></i> Showreel</button>
                     </div>
                 </div>
@@ -78,7 +78,7 @@
 
             <div class="col-lg-4">
                 <div class="heroRight">
-                    <h2 class="text-success">Get our year end promo!</h2>
+                    <h2 class="text-success hideText" id="hideText">Get our year end promo!</h2>
                     <br>
                     <label>Your Name</label>
                     <input type="text" class="form-control" />
@@ -219,6 +219,14 @@
                                 <p class="text-white">Desain mezanine untuk ruang lebih luas.</p>
                             </div>
                         </div>
+                        <br>
+                        <p class="text-white" id="textServices">
+                            Aurelia Residence 2 menawarkan cicilan mulai dari 3 juta per bulan, menjadikannya pilihan ideal
+                            bagi keluarga. Dengan desain mezanine yang modern, Anda dapat menikmati ruang yang lebih luas
+                            dan nyaman.
+                        </p>
+
+                        <button type="button" class="btn btn-secondary" id="showServices">Show More Services →</button>
                     </div>
                 </div>
             </div>
@@ -228,15 +236,14 @@
 <!--End Section Keunggulan-->
 
 
-
-
-
-
+<!--JQUERY-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
 <!--Bootstrap JS-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 <!--customjs-->
 <script src="js/script.js"></script>
+
 </body>
 </html>
